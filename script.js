@@ -70,6 +70,7 @@ function finishQuiz() {
 }
 
 function retry() {
+    document.getElementById("progress-bar-container").classList.add("hidden");
     window.location.href = 'index.html';
 }
 
