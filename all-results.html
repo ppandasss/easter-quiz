@@ -1,1 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All MBTI Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>All MBTI Results</h1>
+        <div id="all-results-container"></div>
+        <a href="index.html">← Back to Quiz</a>
+    </div>
 
+    <script>
+    const types = [
+      "INTJ", "INTP", "ENTJ", "ENTP",
+      "INFJ", "INFP", "ENFJ", "ENFP",
+      "ISTJ", "ISFJ", "ESTJ", "ESFJ",
+      "ISTP", "ISFP", "ESTP", "ESFP"
+    ];
+
+    const container = document.getElementById('all-results-container');
+    types.forEach(type => {
+      const img = document.createElement('img');
+      img.src = `images/${type}.png`;
+      img.alt = type;
+      img.style.maxWidth = '300px';
+      img.style.margin = '20px';
+      container.appendChild(img);
+    });
+    </script>
+</body>
+</html>

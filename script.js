@@ -31,6 +31,9 @@ function showQuestion() {
 
     choice0.onclick = () => selectAnswer(q.answers[0].types);
     choice1.onclick = () => selectAnswer(q.answers[1].types);
+
+    const progress = ((index + 1) / questions.length) * 100;
+    document.getElementById('progress-bar').style.width = progress + '%';
 }
 
 function selectAnswer(types) {
@@ -56,4 +59,33 @@ function finishQuiz() {
 
     window.location.href = `results.html?type=${result}`;
 }
+
+function retry() {
+    window.location.href = 'index.html';
+}
+
+function downloadImage() {
+    const img = document.getElementById('result-image');
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.download = 'your_result.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+function shareQuiz() {
+    const url = window.location.href.split('?')[0]; // Just the base URL
+    if (navigator.share) {
+        navigator.share({
+            title: 'Try this MBTI Quiz!',
+            url: url
+        }).catch(console.error);
+    } else {
+        navigator.clipboard.writeText(url).then(() => {
+            alert('Link copied to clipboard!');
+        });
+    }
+}
+
 

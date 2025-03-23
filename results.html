@@ -7,17 +7,55 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Your MBTI Type is:</h1>
-    <h2 id="result-type"></h2>
-    <img id="result-image" src="" alt="Result Image" style="max-width:300px" />
-    <p><a href="index.html">Try Again</a></p>
+    <div id="result-container" style="text-align: center; padding: 2rem;">
+        <h1>Your MBTI Type is:</h1>
+        <h2 id="result-type"></h2>
+        <img id="result-image" src="" alt="Result Image" style="max-width:300px; margin: 1rem 0;" />
+
+        <div class="button-group" style="margin-top: 1rem;">
+            <button onclick="retry()">Try Again</button>
+            <button onclick="downloadImage()">Download Image</button>
+            <button onclick="shareQuiz()">Share Quiz</button>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <a href="all-results.html">Check all results</a>
+        </div>
+    </div>
 
     <script>
-    const params = new URLSearchParams(window.location.search);
-    const type = params.get("type");
-    document.getElementById("result-type").textContent = type;
-    document.getElementById("result-image").src = `images/${type}.png`;
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get("type");
+        document.getElementById("result-type").textContent = type;
+        document.getElementById("result-image").src = `images/${type}.png`;
+
+        function retry() {
+            window.location.href = 'index.html';
+        }
+
+        function downloadImage() {
+            const img = document.getElementById('result-image');
+            const link = document.createElement('a');
+            link.href = img.src;
+            link.download = `${type}_result.png`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function shareQuiz() {
+            const url = window.location.origin + window.location.pathname.replace("results.html", "index.html");
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Try this MBTI Quiz!',
+                    url: url
+                }).catch(console.error);
+            } else {
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard!');
+                });
+            }
+        }
     </script>
 </body>
 </html>
-
