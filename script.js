@@ -13,6 +13,7 @@ const questionText = document.getElementById("question-text");
 const choice0 = document.getElementById("choice-0");
 const choice1 = document.getElementById("choice-1");
 const progress = document.getElementById("progress");
+const progressBarContainer = document.getElementById("progress-bar-container");
 
 startButton.addEventListener("click", startQuiz);
 
@@ -20,15 +21,11 @@ function startQuiz() {
     startScreen.classList.add("hidden");
     questionScreen.classList.remove("hidden");
 
-    // Ensure progress bar is hidden initially and then shown once the quiz starts
-    const progressBarContainer = document.getElementById("progress-bar-container");
-
-    // Make sure it's hidden at the start
+    // Show the progress bar once the quiz starts (removes the 'hidden' class)
     progressBarContainer.classList.remove("hidden");
 
     showQuestion();
 }
-
 
 function updateProgressBar() {
     const percent = (currentQuestion / questions.length) * 100;
@@ -47,7 +44,6 @@ function showQuestion() {
     choice0.onclick = () => selectAnswer(q.answers[0].types);
     choice1.onclick = () => selectAnswer(q.answers[1].types);
 }
-
 
 function selectAnswer(types) {
     types.forEach(type => {
@@ -100,5 +96,3 @@ function shareQuiz() {
         });
     }
 }
-
-
