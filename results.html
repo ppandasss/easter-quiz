@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Result</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Your MBTI Type is:</h1>
+    <h2 id="result-type"></h2>
+    <img id="result-image" src="" alt="Result Image" style="max-width:300px" />
+    <p><a href="index.html">Try Again</a></p>
+
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type");
+    document.getElementById("result-type").textContent = type;
+    document.getElementById("result-image").src = `images/${type}.png`;
+    </script>
+</body>
+</html>
 
