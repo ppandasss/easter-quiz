@@ -21,7 +21,7 @@ function startQuiz() {
     startScreen.classList.add("hidden");
     questionScreen.classList.remove("hidden");
 
-    // Show the progress bar once the quiz starts (removes the 'hidden' class)
+    // Show the progress bar once the quiz starts
     progressBarContainer.classList.remove("hidden");
 
     showQuestion();
