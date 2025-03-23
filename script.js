@@ -27,7 +27,6 @@ function updateProgressBar() {
     document.getElementById("progress-bar").style.width = `${percent}%`;
 }
 
-
 function showQuestion() {
     const q = questions[currentQuestion];
     questionText.textContent = q.text;
@@ -35,9 +34,12 @@ function showQuestion() {
     choice1.textContent = q.answers[1].text;
     progress.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
 
+    updateProgressBar();
+
     choice0.onclick = () => selectAnswer(q.answers[0].types);
     choice1.onclick = () => selectAnswer(q.answers[1].types);
 }
+
 
 function selectAnswer(types) {
     types.forEach(type => {
