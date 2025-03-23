@@ -22,6 +22,12 @@ function startQuiz() {
     showQuestion();
 }
 
+function updateProgressBar() {
+    const percent = (currentQuestion / questions.length) * 100;
+    document.getElementById("progress-bar").style.width = `${percent}%`;
+}
+
+
 function showQuestion() {
     const q = questions[currentQuestion];
     questionText.textContent = q.text;
@@ -31,9 +37,6 @@ function showQuestion() {
 
     choice0.onclick = () => selectAnswer(q.answers[0].types);
     choice1.onclick = () => selectAnswer(q.answers[1].types);
-
-    const progress = ((index + 1) / questions.length) * 100;
-    document.getElementById('progress-bar').style.width = progress + '%';
 }
 
 function selectAnswer(types) {

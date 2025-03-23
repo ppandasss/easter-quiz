@@ -24,17 +24,17 @@ button {
 
 #progress-bar-container {
     width: 100%;
-    background: #eee;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    height: 20px;
+    background-color: #eee;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
 }
 
 #progress-bar {
     height: 100%;
     width: 0%;
-    background: #4caf50;
-    border-radius: 10px;
-    transition: width 0.3s ease;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
 }
 
