@@ -20,11 +20,15 @@ function startQuiz() {
     startScreen.classList.add("hidden");
     questionScreen.classList.remove("hidden");
 
-    // Show the progress bar once the quiz starts
-    document.getElementById("progress-bar-container").classList.remove("hidden");
+    // Ensure progress bar is hidden initially and then shown once the quiz starts
+    const progressBarContainer = document.getElementById("progress-bar-container");
+
+    // Make sure it's hidden at the start
+    progressBarContainer.classList.remove("hidden");
 
     showQuestion();
 }
+
 
 function updateProgressBar() {
     const percent = (currentQuestion / questions.length) * 100;
