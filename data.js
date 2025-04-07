@@ -39,8 +39,7 @@ const questions = [
         text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nI want you on my team because...you've got something special that'll help me win!\nAre you in? If we win, I'll share the wish with you.\"",
         image: "images/question-placeholder.png",
         answers: [
-            { text: "Alright, I'm in.", types: [] },
-            { text: "It's a promise, then!", types: [] },
+            { text: "Alright, I'm in!", types: [] },
         ]
     },
     {
@@ -76,7 +75,7 @@ const questions = [
         image: "images/question-placeholder.png",
         answers: [
             { text: "The short route might not have as many eggs, but it's faster to explore all.", types: ["T"] },
-            { text: "Something about the long path feels right... I trust my gut\u2014let’s go that way.", types: ["F"] },
+            { text: "Something about the long path feels right... I trust my gut\u2014let's go that way.", types: ["F"] },
         ]
     },
     {
@@ -98,38 +97,46 @@ const questions = [
         ]
     },
     {
-        text: "When learning, you prefer:",
+        // F
+        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you've learned from...",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Practical examples", types: ["S"] },
-            { text: "Abstract theories", types: ["N"] },
+            { text: "Observing other bunnies' clever moves and tricks.", types: ["S"] },
+            { text: "Studying the environment and adapting your own strategy.", types: ["N"] },
         ]
     },
     {
-        text: "You value:",
+        // L
+        text: "You spot an egg sitting out in an open area\u2014it looks a little too easy.\n\nYou pause before going in, thinking it might be a trap.",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Fairness", types: ["T"] },
-            { text: "Compassion", types: ["F"] },
+            { text: "Better have some tools ready\u2014or at least a plan. Always be prepared!", types: ["J"] },
+            { text: "We don’t have any clue yet. Let's just figure something out if anything happens.", types: ["P"] },
         ]
     },
     {
-        text: "You recharge by:",
+        text: "Before you can decide, Aster rushes in and grabs the egg.\n\n\"We got another one-whoa\u2014!\" Aster nearly falls into a hidden pit. You quickly pull him back up, and the hunt continues.",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Spending time alone", types: ["I"] },
-            { text: "Being around people", types: ["E"] },
+            { text: "Let's find more eggs!", types: [] },
         ]
     },
+    {
+        // G
+        text: "Time is almost up, and your basket is nearly overflowing with eggs.\n\nYou spot one more nearby and reach for it\n\n\u2014but a baby bunny arrives just a second after you.Their basket only has one lonely egg.",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Sorry, kid. Rules are rules.", types: ["T"] },
+            { text: "Aw, only one? Then this one is yours!", types: ["F"] },
+        ]
+    },
+
     {
         text: "You base conclusions on:",
+        image: "images/question-placeholder.png",
         answers: [
             { text: "Objective truth", types: ["T"] },
             { text: "Personal impact", types: ["F"] },
-        ]
-    },
-    {
-        text: "You are more often:",
-        answers: [
-            { text: "Prepared", types: ["J"] },
-            { text: "Go with the flow", types: ["P"] },
         ]
     },
     {
