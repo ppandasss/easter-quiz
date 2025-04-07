@@ -113,11 +113,6 @@ button {
         font-size: 16px; /* Adjust base font size for phone */
     }
 
-    .hidden {
-        display: none;
-    }
-
-
     h1, h2, h3, h4, h5, h6 {
         font-size: 30px; /* Smaller heading sizes on mobile */
     }
@@ -145,10 +140,6 @@ button {
 @media (max-width: 480px) {
     body {
         font-size: 14px; /* Smaller base font size for very small screens */
-    }
-
-    .hidden {
-        display: none;
     }
 
     h1, h2, h3, h4, h5, h6 {
