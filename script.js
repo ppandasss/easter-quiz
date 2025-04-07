@@ -31,8 +31,13 @@ function updateProgressBar() {
 function showQuestion() {
     const q = questions[currentQuestion];
     // Replace {relaxMethod} or any other placeholders with stored responses
-    let renderedText = q.text.replace(/{(.*?)}/g, (_, key) => userResponses[key] || "");
-    questionText.textContent = renderedText; // Set the updated text with the user's response
+    let renderedText = q.text.replace(/{(.*?)}/g, (_, key) => {
+        const value = userResponses[key] || "";
+        // Wrap the placeholder value in a span to apply special styling
+        return value ? `<span class="highlighted-text">${value}</span>` : "";
+    });
+
+    questionText.innerHTML = renderedText; // Use innerHTML to allow the span tag
 
     const questionImage = document.getElementById("question-image");
     questionImage.src = q.image || "images/placeholder.png";

@@ -30,6 +30,11 @@ a {
     display: none;
 }
 
+.highlighted-text {
+    color: #887BB0;
+    font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Grandstander', cursive;
     font-weight: 700;
@@ -113,7 +118,7 @@ button {
     }
 
 .short-answer-input {
-    width: 80%;
+    width: 100%;
     padding: 15px;
     margin-bottom: 15px;
     font-family: 'Balsamiq Sans', sans-serif;
@@ -151,6 +156,11 @@ button {
         font-size: 16px;
         padding: 12px;
         width: 80%;
+    }
+
+    .short-answer-input {
+        width: 80%;
+        padding: 15px;
     }
 
     #question-text {
@@ -192,6 +202,11 @@ button {
         font-size: 15px;
         padding: 10px;
         width: 80%;
+    }
+
+    .short-answer-input {
+        width: 80%;
+        padding: 12px;
     }
 
     #question-text {
