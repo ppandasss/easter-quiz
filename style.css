@@ -26,6 +26,9 @@ a {
         color: #E4A58F; /* Color when the link is clicked */
     }
 
+.hidden {
+    display: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Grandstander', cursive;
@@ -103,11 +106,17 @@ button {
         color: ghostwhite;
     }
 
+
 /* Reduce font-size for smaller screens */
 @media (max-width: 768px) {
     body {
         font-size: 16px; /* Adjust base font size for phone */
     }
+
+    .hidden {
+        display: none;
+    }
+
 
     h1, h2, h3, h4, h5, h6 {
         font-size: 30px; /* Smaller heading sizes on mobile */
@@ -138,6 +147,10 @@ button {
         font-size: 14px; /* Smaller base font size for very small screens */
     }
 
+    .hidden {
+        display: none;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-size: 24px; /* Even smaller heading sizes */
     }
@@ -155,8 +168,4 @@ button {
     #progress-bar-container {
         height: 10px; /* Smaller progress bar */
     }
-}
-
-.hidden {
-    display: none;
 }
