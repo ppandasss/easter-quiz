@@ -19,7 +19,6 @@ startButton.addEventListener("click", startQuiz);
 function startQuiz() {
     startScreen.classList.add("hidden");
     questionScreen.classList.remove("hidden");
-    progressBarContainer.classList.remove("hidden");
 
     showQuestion();
 }
