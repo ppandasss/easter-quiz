@@ -7,8 +7,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Grandstander', sans-serif;
-    font-weight: 700; /* Bold weight for headers */
+    font-family: 'Grandstander', cursive;
+    font-weight: 700;
 }
 
 #quiz-container {
