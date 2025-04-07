@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f8f8f8;
+    background: #ECF87F;
     text-align: center;
     margin: 0;
     padding: 40px;
@@ -16,27 +16,36 @@ body {
 }
 
 button {
-    padding: 12px 24px;
-    margin: 10px;
     font-size: 16px;
+    padding: 15px;
+    background-color: #85D2D0;
+    color: white;
+    border: 2px solid #887BB0;
+    border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 #progress-bar-container {
     width: 100%;
-    background-color: #eee;
-    height: 20px;
+    background-color: #E4A58F;
+    height: 15px;
     position: relative;
-    border: 1px solid #ccc;
-    margin-bottom: 20px; /* space between progress bar and question */
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 999px; /* <-- Rounded container */
+    overflow: hidden; /* <-- Ensures the inner bar doesn’t overflow the rounded edges */
 }
 
 #progress-bar {
     height: 100%;
     width: 0%;
-    background-color: #4CAF50 !important;
+    background-color: #887BB0 !important;
     transition: width 0.3s ease-in-out;
+    border-radius: 999px; /* <-- Rounded progress bar */
 }
+
 
 #question-text {
     font-size: 18px;
@@ -44,10 +53,11 @@ button {
 }
 
 .answer-button {
-    padding: 10px;
-    background-color: #4CAF50;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #85D2D0;
     color: white;
-    border: none;
+    border: 2px solid #887BB0;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
