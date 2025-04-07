@@ -3,9 +3,28 @@ body {
     background: #ECF87F;
     text-align: center;
     margin: 0;
-    padding: 30px;
+    padding: 10px;
     font-size: 20px;
 }
+
+a {
+    color: #887BB0; /* Link color */
+    text-decoration: none; /* Removes underline */
+    font-weight: 700; /* Makes the link bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Hover Effect */
+    a:hover {
+        color: #85D2D0; /* Change link color when hovered */
+        text-decoration: underline; /* Add underline on hover */
+    }
+
+    /* Active Link Style (when clicked) */
+    a:active {
+        color: #E4A58F; /* Color when the link is clicked */
+    }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Grandstander', cursive;
@@ -16,10 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 #quiz-container {
     max-width: 600px;
     margin: 0 auto;
-}
-
-.hidden {
-    display: none;
 }
 
 button {
@@ -86,3 +101,15 @@ button {
         background-color: #887BB0;
         color: ghostwhite;
     }
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
