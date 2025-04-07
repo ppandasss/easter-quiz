@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #question-image {
-    max-width: 475px;
+    width: 475px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -129,6 +129,12 @@ button {
         width: 170px; /* Smaller width for buttons */
     }
 
+    #question-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
     .answer-button {
         font-size: 16px;
         padding: 12px;
@@ -162,6 +168,12 @@ button {
         font-size: 15px; /* Further reduce button font size */
         padding: 10px; /* Smaller button padding */
         width: 140px; /* Even smaller button width */
+    }
+
+    #question-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .answer-button {

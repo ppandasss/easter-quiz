@@ -12,16 +12,26 @@ const questions = [
     {
         // B
         text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\"Oh, hi! Dark corner eyes... unsubmitted assignments... and back pain! You're perfect! Come with me!\" The bunny grabs your hand and pulls you toward the screen.",
+        image: "images/question-placeholder.png",
         answers: [
             { text: "Did I fall asleep? Am I hallucinating from too much caffeine?", types: ["S"] },
             { text: "Yay! Magic is real! What am I gonna isekai into?", types: ["N"] },
         ]
     },
     {
-        text: "You focus more on:",
+        // J
+        text: "\"Hi, human! My name's Aster. I'm taking you to join the Easter egg hunt! Winner gets a wish from the goddess this year!\"\nWhat first comes to your mind is...",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Facts and details", types: ["S"] },
-            { text: "Ideas and possibilities", types: ["N"] },
+            { text: "An egg hunt? Is my body ready for that right now\u2014am I wearing any shoes?", types: ["S"] },
+            { text: "Any wish? What should I ask for? I wonder who that goddess is.", types: ["N"] },
+        ]
+    },
+    {
+        text: "You prefer to spend time:",
+        answers: [
+            { text: "Alone or with a few friends", types: ["I"] },
+            { text: "In a big group or party", types: ["E"] },
         ]
     },
     {
@@ -71,13 +81,6 @@ const questions = [
         answers: [
             { text: "Spending time alone", types: ["I"] },
             { text: "Being around people", types: ["E"] },
-        ]
-    },
-    {
-        text: "You prefer information that is:",
-        answers: [
-            { text: "Concrete", types: ["S"] },
-            { text: "Conceptual", types: ["N"] },
         ]
     },
     {
