@@ -113,11 +113,13 @@ button {
     }
 
 .short-answer-input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 400;
     font-size: 1rem;
-    border: 2px solid #ccc;
+    border: 2px solid #E4A58F;
     border-radius: 8px;
 }
 

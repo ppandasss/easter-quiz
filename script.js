@@ -49,14 +49,14 @@ function showQuestion() {
         // Create submit button
         const submit = document.createElement("button");
         submit.textContent = "Submit";
-        submit.classList.add("answer-button");
+        submit.classList.add("button");
         submit.addEventListener("click", () => {
             const userAnswer = input.value.trim();
             if (userAnswer !== "") {
                 userResponses[q.id] = userAnswer;
                 goToNextQuestion();
             } else {
-                alert("Please enter an answer before continuing.");
+                alert("Answer one before continuing. It can be anything!");
             }
         });
         answersContainer.appendChild(submit);

@@ -31,7 +31,7 @@ const questions = [
         // Short Answer
         type: "shortAnswer",
         id: "relaxMethod",
-        text: "You realize you have unfinished assignments, and you're unsure if you should go.\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\"\n\"I know you've been tired lately. All work and no rest isn't good for you. Treat this as a break!\n \"So tell me\u2014how do you relax when everything feels like too much ?\"",
+        text: "You realize you have unfinished assignments, and you're unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\"\n\"I know you've been tired lately. All work and no rest isn't good for you. Treat this as a break!\n\n\"So tell me\u2014how do you relax when everything feels like too much ?\"",
         image: "images/question-placeholder.png",
         answers: null
     },
@@ -104,5 +104,12 @@ const questions = [
             { text: "Prepared", types: ["J"] },
             { text: "Go with the flow", types: ["P"] },
         ]
+    },
+    {
+        // Short Answer Insert
+        text: "\"Remember\u2014no one's more special to you than you, so be kind to yourself.\"\n\n\"Take some rest, {relaxMethod}, just like you love to do.\"\n\n\"Heal up so you can continue strong.\"",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "...", types: [] },
     },
 ];
