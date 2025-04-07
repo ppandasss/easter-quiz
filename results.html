@@ -26,6 +26,13 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         const type = params.get("type");
+
+        // Robustness check for missing type
+        if (!type) {
+            document.getElementById("result-container").innerHTML = "<p>No result found. <a href='index.html'>Take the quiz</a> first!</p>";
+            throw new Error("No result type provided."); // Optional: stop further script execution
+        }
+
         document.getElementById("result-type").textContent = type;
         document.getElementById("result-image").src = `images/${type}.png`;
 

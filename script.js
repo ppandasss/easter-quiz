@@ -46,9 +46,11 @@ function showQuestion() {
 }
 
 function selectAnswer(types) {
-    types.forEach(type => {
-        scores[type]++;
-    });
+    if (types && Array.isArray(types)) {
+        types.forEach(type => {
+            scores[type]++;
+        });
+    }
 
     currentQuestion++;
     if (currentQuestion < questions.length) {

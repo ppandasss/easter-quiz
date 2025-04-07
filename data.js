@@ -3,9 +3,9 @@ const questions = [
     {
         text: "Now it's 3AM and you're still working at your computer.<br>You look at the pile of soon-due assignments that is…",
         answers: [
-            { text: "Many"},
-            { text: "So many"},
-            { text: "Sososo many!"},
+            { text: "Many", types: [] },
+            { text: "So many", types: [] },
+            { text: "Sososo many!", types: [] },
         ]
     },
     {
