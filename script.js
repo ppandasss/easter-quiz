@@ -13,6 +13,7 @@ const questionText = document.getElementById("question-text");
 const answersContainer = document.getElementById("answers");
 const progressBarContainer = document.getElementById("progress-bar-container");
 const progressBar = document.getElementById("progress-bar");
+const userResponses = {};
 
 startButton.addEventListener("click", startQuiz);
 
@@ -30,18 +31,44 @@ function updateProgressBar() {
 
 function showQuestion() {
     const q = questions[currentQuestion];
+    let renderedText = q.text.replace(/{(.*?)}/g, (_, key) => userResponses[key] || "");
+    questionText.textContent = renderedText;
     questionText.textContent = q.text;
     const questionImage = document.getElementById("question-image");
     questionImage.src = q.image || "images/placeholder.png";
     answersContainer.innerHTML = ""; // clear previous answers
 
-    q.answers.forEach((answer, index) => {
-        const button = document.createElement("button");
-        button.classList.add("answer-button");
-        button.textContent = answer.text;
-        button.addEventListener("click", () => selectAnswer(answer.types));
-        answersContainer.appendChild(button);
-    });
+    if (q.type === "shortAnswer") {
+        // Create input box
+        const input = document.createElement("input");
+        input.type = "text";
+        input.classList.add("short-answer-input");
+        input.placeholder = "Type your answer here...";
+        answersContainer.appendChild(input);
+
+        // Create submit button
+        const submit = document.createElement("button");
+        submit.textContent = "Submit";
+        submit.classList.add("answer-button");
+        submit.addEventListener("click", () => {
+            const userAnswer = input.value.trim();
+            if (userAnswer !== "") {
+                userResponses[q.id] = userAnswer;
+                goToNextQuestion();
+            } else {
+                alert("Please enter an answer before continuing.");
+            }
+        });
+        answersContainer.appendChild(submit);
+    } else {
+        q.answers.forEach((answer, index) => {
+            const button = document.createElement("button");
+            button.classList.add("answer-button");
+            button.textContent = answer.text;
+            button.addEventListener("click", () => selectAnswer(answer.types));
+            answersContainer.appendChild(button);
+        });
+    }
 
     updateProgressBar();
 }
@@ -53,6 +80,10 @@ function selectAnswer(types) {
         });
     }
 
+    goToNextQuestion();
+}
+
+function goToNextQuestion() {
     currentQuestion++;
     if (currentQuestion < questions.length) {
         showQuestion();

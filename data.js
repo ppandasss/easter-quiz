@@ -20,12 +20,20 @@ const questions = [
     },
     {
         // J
-        text: "\"Hi, human! My name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
+        text: "\"Hi, human. My name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
         image: "images/question-placeholder.png",
         answers: [
             { text: "An egg hunt? Is my body ready for that right now\u2014am I wearing any shoes?", types: ["S"] },
             { text: "Any wish? What should I ask for? I wonder who that goddess is.", types: ["N"] },
         ]
+    },
+    {
+        // Short Answer
+        type: "shortAnswer",
+        id: "relaxMethod",
+        text: "You realize you have unfinished assignments, and you're unsure if you should go.\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\"\n\"I know you've been tired lately. All work and no rest isn't good for you. Treat this as a break!\n \"So tell me\u2014how do you relax when everything feels like too much ?\"",
+        image: "images/question-placeholder.png",
+        answers: null
     },
     {
         text: "You prefer to spend time:",
