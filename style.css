@@ -16,11 +16,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 40px;
     display: flex;
+    text-align: center;
     justify-content: center; /* Keeps the content centered horizontally */
     height: 100vh; /* Makes the body take full screen height */
-    flex-direction: column; /* Allow elements to stack vertically */
 }
 
 #quiz-container {
