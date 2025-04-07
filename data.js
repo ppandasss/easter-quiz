@@ -31,7 +31,7 @@ const questions = [
         // Short Answer
         type: "shortAnswer",
         id: "relaxMethod",
-        text: "You realize you have unfinished assignments, and you're unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\"\n\"I know you've been tired lately. All work and no rest isn't good for you. Treat this as a break!\n\n\"So tell me\u2014how do you relax when everything feels like too much ?\"",
+        text: "You realize you have unfinished assignments, and you're unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\"\n\"I know you've been tired lately. All work and no rest isn't good for you. Treat this as a break!\n\n\"So tell me\u2014what do you do when everything feels like too much?\"",
         image: "images/question-placeholder.png",
         answers: null
     },

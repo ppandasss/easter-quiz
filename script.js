@@ -48,7 +48,7 @@ function showQuestion() {
 
         // Create submit button
         const submit = document.createElement("button");
-        submit.textContent = "Submit";
+        submit.textContent = "This is how I relax";
         submit.classList.add("button");
         submit.addEventListener("click", () => {
             const userAnswer = input.value.trim();
