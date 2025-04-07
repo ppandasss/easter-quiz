@@ -18,8 +18,19 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    justify-content: center; /* Keeps the content centered horizontally */
+    height: 100vh; /* Makes the body take full screen height */
+    flex-direction: column; /* Allow elements to stack vertically */
+}
+
+#quiz-container {
+    max-width: 800px; /* Controls the max width of the content */
+    width: 100%;
+    margin-top: 20px; /* Add margin if needed for spacing from top */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: white;
+    border-radius: 8px; /* Optional: adds rounded corners to the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a soft look */
 }
 
 /*body {
@@ -28,12 +39,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 40px;
-}*/
+
 
 #quiz-container {
     max-width: 600px;
     margin: 0 auto;
-}
+}}*/
 
 .hidden {
     display: none;
