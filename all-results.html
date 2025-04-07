@@ -14,7 +14,7 @@
     <div>
         <h1>Easter Egg Collection</h1>
         <div id="all-results-container"></div>
-        <a href="index.html">← Back to Quiz</a>
+        <button onclick="toHome()">Back to Egg Hunt</button>
     </div>
 
     <script>
@@ -56,6 +56,10 @@
 
             container.appendChild(wrapper);
         });
+
+        function toHome() {
+            window.location.href = 'index.html';
+        }
     </script>
 </body>
 </html>

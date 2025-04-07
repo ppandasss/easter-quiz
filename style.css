@@ -142,24 +142,29 @@ button {
 
     button {
         font-size: 16px; /* Smaller font size for buttons */
-        padding: 12px; /* Adjust button padding */
+        padding: 14px; /* Adjust button padding */
         width: 170px; /* Smaller width for buttons */
     }
 
+    #quiz-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
     #question-image {
-        width: 80%;
+        width: 100%;
         height: fit-content;
         margin-bottom: 20px;
     }
 
     .answer-button {
         font-size: 16px;
-        padding: 12px;
-        width: 80%;
+        padding: 14px;
+        width: 100%;
     }
 
     .short-answer-input {
-        width: 80%;
+        width: 100%;
         padding: 15px;
     }
 
@@ -168,7 +173,7 @@ button {
     }
 
     #progress-bar-container {
-        height: 12px;
+        height: 14px;
     }
 
     #progress-bar {
@@ -188,24 +193,29 @@ button {
 
     button {
         font-size: 15px; /* Further reduce button font size */
-        padding: 10px; /* Smaller button padding */
+        padding: 12px; /* Smaller button padding */
         width: 140px; /* Even smaller button width */
     }
 
+    #quiz-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
     #question-image {
-        width: 80%;
+        width: 100%;
         height: fit-content;
         margin-bottom: 20px;
     }
 
     .answer-button {
         font-size: 15px;
-        padding: 10px;
-        width: 80%;
+        padding: 12px;
+        width: 100%;
     }
 
     .short-answer-input {
-        width: 80%;
+        width: 100%;
         padding: 12px;
     }
 
@@ -214,6 +224,6 @@ button {
     }
 
     #progress-bar-container {
-        height: 10px; /* Smaller progress bar */
+        height: 12px; /* Smaller progress bar */
     }
 }
