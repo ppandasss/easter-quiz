@@ -46,30 +46,55 @@ const questions = [
     {
         // D
         text: "You and Aster arrive in a magical forest. Bunnies are running in all directions.\n\n\"The hunt has already started\u2014we're late! Follow me!\"",
+        image: "images/question-placeholder.png",
         answers: [
             { text: "Wait! Shouldn't we plan our moves first?", types: ["J"] },
-            { text: "Run run run! There'll be eggs somewhere!", types: ["P"] },
+            { text: "Run run run! There must be eggs somewhere!", types: ["P"] },
         ]
     },
     {
-        text: "You prefer to spend time:",
+        // A
+        text: "While collecting eggs in the first area, Aster says\n\n\"We actually missed the team-forming earlier... we could've had more bunnies join us.\"",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Alone or with a few friends", types: ["I"] },
-            { text: "In a big group or party", types: ["E"] },
+            { text: "Nah, just us is good. Small group = less chaos!", types: ["I"] },
+            { text: "A big team sounds better. More people = more fun!", types: ["E"] },
         ]
     },
     {
-        text: "When making decisions, you prioritize:",
+        // H
+        text: "In the next area, you find a hen's nest full of Easter eggs. Aster tells you to stand by while they distract the hen.\n\nYou nod and think...",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Logic and consistency", types: ["T"] },
-            { text: "Feelings and values", types: ["F"] },
+            { text: "We've got a plan! We're definitely getting those eggs.", types: ["J"] },
+            { text: "Hmm... what if the hen runs off? Maybe we need a backup plan.", types: ["P"] },
         ]
     },
     {
-        text: "In conversations, you:",
+        // C
+        text: "The plan works! After successfully gathering the eggs, you continue and reach a fork in the road.\n\nYou think...",
+        image: "images/question-placeholder.png",
         answers: [
-            { text: "Listen more", types: ["I"] },
-            { text: "Talk more", types: ["E"] },
+            { text: "The short route might not have as many eggs, but it's faster to explore all.", types: ["T"] },
+            { text: "Something about the long path feels right... I trust my gut\u2014let’s go that way.", types: ["F"] },
+        ]
+    },
+    {
+        // I
+        text: "\"Beep beep\u2014It's halftime! Please gather at the center area.\" The announcement rings lal over the forest.\n\nAster says, \"I'm gonna chat with the other bunnies. Come join me if you want!\"\n\nYou decide to recharge by...",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Sitting alone and enjoying the peaceful view.", types: ["I"] },
+            { text: "Joining Aster\u2014I want to meet the other bunnies!", types: ["E"] },
+        ]
+    },
+    {
+        // E
+        text: "After a while, a bunny hops over and starts telling you all about their journey to the hunt every year, going on in colorful detail.\n\nYou decide to...",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Share how strange you ended up here too!", types: ["E"] },
+            { text: "Listen quietly and enjoy their energy.", types: ["I"] },
         ]
     },
     {
@@ -84,13 +109,6 @@ const questions = [
         answers: [
             { text: "Fairness", types: ["T"] },
             { text: "Compassion", types: ["F"] },
-        ]
-    },
-    {
-        text: "Plans make you feel:",
-        answers: [
-            { text: "Comfortable", types: ["J"] },
-            { text: "Restricted", types: ["P"] },
         ]
     },
     {
