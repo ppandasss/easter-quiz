@@ -4,11 +4,13 @@ body {
     text-align: center;
     margin: 0;
     padding: 40px;
+    font-size: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Grandstander', cursive;
     font-weight: 700;
+    font-size: 40px;
 }
 
 #quiz-container {
@@ -21,8 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+    font-family: 'Balsamiq Sans', sans-serif; /* Use Balsamiq Sans for buttons */
+    font-weight: 700; /* Bold weight for buttons */
     font-size: 16px;
-    font-weight: bold;
     padding: 15px;
     background-color: #85D2D0;
     color: black;
@@ -53,8 +56,9 @@ button {
 }
 
 .answer-button {
+    font-family: 'Balsamiq Sans', sans-serif; /* Ensure this is also using Balsamiq Sans */
+    font-weight: 700; /* Bold weight */
     font-size: 16px;
-    font-weight: bold;
     padding: 15px;
     background-color: #85D2D0;
     color: black;
