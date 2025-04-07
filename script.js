@@ -62,9 +62,6 @@ function showQuestion() {
         answersContainer.appendChild(submit);
     }
 
-    progress.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
-    progress.classList.remove("hidden");
-
     updateProgressBar();
 }
 
@@ -91,6 +88,7 @@ function finishQuiz() {
 
     window.location.href = `results.html?type=${result}`;
 }
+
 
 function retry() {
     document.getElementById("progress-bar-container").classList.add("hidden");
