@@ -17,10 +17,11 @@ body {
 
 button {
     font-size: 16px;
+    font-weight: bold;
     padding: 15px;
     background-color: #85D2D0;
     color: black;
-    border: 4px solid #887BB0;
+    border: 3px solid #887BB0;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
@@ -48,10 +49,11 @@ button:hover {
 
 .answer-button {
     font-size: 16px;
+    font-weight: bold;
     padding: 15px;
     background-color: #85D2D0;
     color: black;
-    border: 4px solid #887BB0;
+    border: 3px solid #887BB0;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
