@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-    font-family: 'Balsamiq Sans', sans-serif; /* Use Balsamiq Sans for buttons */
-    font-weight: 700; /* Bold weight for buttons */
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     padding: 15px;
     background-color: #85D2D0;
@@ -46,7 +46,7 @@ button {
     width: 0%;
     background-color: #887BB0 !important;
     transition: width 0.3s ease-in-out;
-    border-radius: 999px; /* <-- Rounded progress bar */
+    border-radius: 999px;
 }
 
 #question-text {
@@ -56,8 +56,8 @@ button {
 }
 
 .answer-button {
-    font-family: 'Balsamiq Sans', sans-serif; /* Ensure this is also using Balsamiq Sans */
-    font-weight: 700; /* Bold weight */
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     padding: 15px;
     background-color: #85D2D0;
