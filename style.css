@@ -156,3 +156,7 @@ button {
         height: 10px; /* Smaller progress bar */
     }
 }
+
+.hidden {
+    display: none;
+}
