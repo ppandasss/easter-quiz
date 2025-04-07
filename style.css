@@ -1,6 +1,6 @@
 #container {
     width: 100%;
-    max-width: 1200px; /* Maximum width */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -12,16 +12,14 @@
     }
 }
 
-/* Optional: Add some basic background and border styles */
 body {
-    font-family: Arial, sans-serif; /* You can customize your font */
-    background-color: #f4f4f4; /* Set a background color for the page */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 100vh; /* Makes the body full screen */
+    justify-content: center;
+    height: 100vh;
 }
 
 /*body {
