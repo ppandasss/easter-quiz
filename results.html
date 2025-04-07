@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Easter Egg is...</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="result-container" style="text-align: center; padding: 2rem;">
@@ -12,7 +15,7 @@
         <h2 id="result-type"></h2>
         <img id="result-image" src="" alt="Result Image" style="max-width:300px; margin: 1rem 0;" />
 
-        <div class="button" style="margin-top: 1rem;">
+        <div class="button-group" style="margin-top: 1rem;">
             <button onclick="retry()">Try Again</button>
             <button onclick="downloadImage()">Download Image</button>
             <button onclick="shareQuiz()">Share Quiz</button>
