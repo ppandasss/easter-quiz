@@ -10,18 +10,16 @@ const startButton = document.getElementById("start-button");
 const startScreen = document.getElementById("start-screen");
 const questionScreen = document.getElementById("question-screen");
 const questionText = document.getElementById("question-text");
-const choice0 = document.getElementById("choice-0");
-const choice1 = document.getElementById("choice-1");
+const answersContainer = document.getElementById("answers");
 const progress = document.getElementById("progress");
 const progressBarContainer = document.getElementById("progress-bar-container");
+const progressBar = document.getElementById("progress-bar");
 
 startButton.addEventListener("click", startQuiz);
 
 function startQuiz() {
     startScreen.classList.add("hidden");
     questionScreen.classList.remove("hidden");
-
-    // Show the progress bar once the quiz starts
     progressBarContainer.classList.remove("hidden");
 
     showQuestion();
@@ -29,20 +27,45 @@ function startQuiz() {
 
 function updateProgressBar() {
     const percent = (currentQuestion / questions.length) * 100;
-    document.getElementById("progress-bar").style.width = `${percent}%`;
+    progressBar.style.width = `${percent}%`;
 }
 
 function showQuestion() {
     const q = questions[currentQuestion];
     questionText.textContent = q.text;
-    choice0.textContent = q.answers[0].text;
-    choice1.textContent = q.answers[1].text;
+    answersContainer.innerHTML = ""; // clear previous answers
+
+    if (q.answers.length > 0) {
+        // Multiple choice logic
+        q.answers.forEach((answer, index) => {
+            const button = document.createElement("button");
+            button.classList.add("answer-button");
+            button.textContent = answer.text;
+            button.addEventListener("click", () => selectAnswer(answer.types));
+            answersContainer.appendChild(button);
+        });
+    } else {
+        // Short answer input logic
+        const input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = "Type your answer...";
+        input.classList.add("short-answer");
+
+        const submit = document.createElement("button");
+        submit.textContent = "Submit";
+        submit.addEventListener("click", () => {
+            // You can choose to analyze or ignore this input
+            selectAnswer([]); // No types added for short answers
+        });
+
+        answersContainer.appendChild(input);
+        answersContainer.appendChild(submit);
+    }
+
     progress.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+    progress.classList.remove("hidden");
 
     updateProgressBar();
-
-    choice0.onclick = () => selectAnswer(q.answers[0].types);
-    choice1.onclick = () => selectAnswer(q.answers[1].types);
 }
 
 function selectAnswer(types) {
@@ -59,12 +82,12 @@ function selectAnswer(types) {
 }
 
 function finishQuiz() {
-    // Determine MBTI by highest letter in each pair
+    // Determine MBTI by highest score in each dichotomy
     const result =
-        (scores["E"] > scores["I"] ? "E" : "I") +
-        (scores["S"] > scores["N"] ? "S" : "N") +
-        (scores["T"] > scores["F"] ? "T" : "F") +
-        (scores["J"] > scores["P"] ? "J" : "P");
+        (scores["E"] >= scores["I"] ? "E" : "I") +
+        (scores["S"] >= scores["N"] ? "S" : "N") +
+        (scores["T"] >= scores["F"] ? "T" : "F") +
+        (scores["J"] >= scores["P"] ? "J" : "P");
 
     window.location.href = `results.html?type=${result}`;
 }
@@ -85,7 +108,7 @@ function downloadImage() {
 }
 
 function shareQuiz() {
-    const url = window.location.href.split('?')[0]; // Just the base URL
+    const url = window.location.href.split('?')[0];
     if (navigator.share) {
         navigator.share({
             title: 'Try this MBTI Quiz!',

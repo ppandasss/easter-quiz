@@ -1,10 +1,36 @@
+#container {
+    width: 100%;
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}
+
+/* Optional: Add some basic background and border styles */
 body {
+    font-family: Arial, sans-serif; /* You can customize your font */
+    background-color: #f4f4f4; /* Set a background color for the page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Makes the body full screen */
+}
+
+/*body {
     font-family: Arial, sans-serif;
     background: #f8f8f8;
     text-align: center;
     margin: 0;
     padding: 40px;
-}
+}*/
 
 #quiz-container {
     max-width: 600px;
@@ -35,4 +61,12 @@ button {
     width: 0%;
     background-color: #4CAF50 !important;
     transition: width 0.3s ease-in-out;
+}
+
+.input-style {
+    padding: 0.5em;
+    font-size: 1rem;
+    width: 80%;
+    margin: 1em auto;
+    display: block;
 }
