@@ -11,7 +11,6 @@ const startScreen = document.getElementById("start-screen");
 const questionScreen = document.getElementById("question-screen");
 const questionText = document.getElementById("question-text");
 const answersContainer = document.getElementById("answers");
-const progress = document.getElementById("progress");
 const progressBarContainer = document.getElementById("progress-bar-container");
 const progressBar = document.getElementById("progress-bar");
 
@@ -35,32 +34,13 @@ function showQuestion() {
     questionText.textContent = q.text;
     answersContainer.innerHTML = ""; // clear previous answers
 
-    if (q.answers.length > 0) {
-        // Multiple choice logic
-        q.answers.forEach((answer, index) => {
-            const button = document.createElement("button");
-            button.classList.add("answer-button");
-            button.textContent = answer.text;
-            button.addEventListener("click", () => selectAnswer(answer.types));
-            answersContainer.appendChild(button);
-        });
-    } else {
-        // Short answer input logic
-        const input = document.createElement("input");
-        input.type = "text";
-        input.placeholder = "Type your answer...";
-        input.classList.add("short-answer");
-
-        const submit = document.createElement("button");
-        submit.textContent = "Submit";
-        submit.addEventListener("click", () => {
-            // You can choose to analyze or ignore this input
-            selectAnswer([]); // No types added for short answers
-        });
-
-        answersContainer.appendChild(input);
-        answersContainer.appendChild(submit);
-    }
+    q.answers.forEach((answer, index) => {
+        const button = document.createElement("button");
+        button.classList.add("answer-button");
+        button.textContent = answer.text;
+        button.addEventListener("click", () => selectAnswer(answer.types));
+        answersContainer.appendChild(button);
+    });
 
     updateProgressBar();
 }
@@ -89,9 +69,7 @@ function finishQuiz() {
     window.location.href = `results.html?type=${result}`;
 }
 
-
 function retry() {
-    document.getElementById("progress-bar-container").classList.add("hidden");
     window.location.href = 'index.html';
 }
 
