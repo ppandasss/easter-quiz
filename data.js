@@ -36,6 +36,22 @@ const questions = [
         answers: null
     },
     {
+        text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nI want you on my team because...you've got something special that'll help me win!\nAre you in? If we win, I'll share the wish with you.\"",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Alright, I'm in.", types: [] },
+            { text: "It's a promise, then!", types: [] },
+        ]
+    },
+    {
+        // D
+        text: "You and Aster arrive in a magical forest. Bunnies are running in all directions.\n\n\"The hunt has already started\u2014we're late! Follow me!\"",
+        answers: [
+            { text: "Wait! Shouldn't we plan our moves first?", types: ["J"] },
+            { text: "Run run run! There'll be eggs somewhere!", types: ["P"] },
+        ]
+    },
+    {
         text: "You prefer to spend time:",
         answers: [
             { text: "Alone or with a few friends", types: ["I"] },
@@ -47,13 +63,6 @@ const questions = [
         answers: [
             { text: "Logic and consistency", types: ["T"] },
             { text: "Feelings and values", types: ["F"] },
-        ]
-    },
-    {
-        text: "Your lifestyle is more:",
-        answers: [
-            { text: "Organized and planned", types: ["J"] },
-            { text: "Flexible and spontaneous", types: ["P"] },
         ]
     },
     {
