@@ -42,6 +42,17 @@ button {
         color: ghostwhite;
     }
 
+#progress-bar-container {
+    width: 100%;
+    background-color: #E4A58F;
+    height: 15px;
+    position: relative;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
 #progress-bar {
     height: 100%;
     width: 0%;
