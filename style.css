@@ -3,7 +3,7 @@ body {
     background: #ECF87F;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-button {
+.button button {
     font-family: 'Balsamiq Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -52,7 +52,7 @@ button {
     transition-duration: 0.4s;
 }
 
-    button:hover {
+    .button button:hover {
         background-color: #887BB0;
         color: ghostwhite;
     }
