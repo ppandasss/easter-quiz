@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DDCT Easter Personality Quiz</title>
+    <title>Your Easter Egg Hunt</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Progress Bar -->
@@ -13,17 +15,18 @@
     </div>
 
     <!-- Quiz Wrapper -->
-    <main id="quiz-container">
+    <main id="quiz-container" style="text-align: center; padding: 2rem;">
         <!-- Start Screen -->
         <section id="start-screen">
             <h1>Your Easter Egg Hunt</h1>
             <p>Interactive quiz to find out your personality!</p>
-            <img src=`images/placeholder.png` alt="Home Image" style="max-width:350px; margin: 1rem 0;" />
-            <button id="start-button">Start Quiz</button>
+            <p><img src="images/placeholder.png" alt="Home Image" style="max-width:350px; margin: 1rem 0; display: block; margin-left: auto; margin-right: auto;" /></p>
+            <button id="start-button">Begin</button>
+            <p style="margin-top: 1rem;">Created by PANDA and piti_999</p>
         </section>
 
         <!-- Question Screen -->
-        <section id="question-screen" class="hidden">
+        <section id="quiz-container" class="hidden">
             <p id="question-text"></p>
             <div id="answers">
                 <!-- Answer buttons will be inserted dynamically here -->
