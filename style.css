@@ -19,23 +19,17 @@ button {
     font-size: 16px;
     padding: 15px;
     background-color: #85D2D0;
-    color: white;
+    color: black;
     border: 2px solid #887BB0;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
     width: 100%;
+    transition-duration: 0.4s;
 }
 
-#progress-bar-container {
-    width: 100%;
-    background-color: #E4A58F;
-    height: 15px;
-    position: relative;
-    border: none;
-    margin-bottom: 20px;
-    border-radius: 999px; /* <-- Rounded container */
-    overflow: hidden; /* <-- Ensures the inner bar doesn’t overflow the rounded edges */
+button:hover {
+    background-color: #887BB0;
 }
 
 #progress-bar {
@@ -56,7 +50,7 @@ button {
     font-size: 16px;
     padding: 15px;
     background-color: #85D2D0;
-    color: white;
+    color: black;
     border: 2px solid #887BB0;
     border-radius: 5px;
     cursor: pointer;
@@ -65,5 +59,5 @@ button {
 }
 
 .answer-button:hover {
-    background-color: #45a049;
+    background-color: #887BB0;
 }
