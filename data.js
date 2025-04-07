@@ -10,10 +10,11 @@ const questions = [
         ]
     },
     {
-        text: "You prefer to spend time:",
+        // B
+        text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\"Oh, hi! Dark corner eyes... unsubmitted assignments... and back pain! You're perfect! Come with me!\" The bunny grabs your hand and pulls you toward the screen.",
         answers: [
-            { text: "Alone or with a few friends", types: ["I"] },
-            { text: "In a big group or party", types: ["E"] },
+            { text: "Did I fall asleep? Am I hallucinating from too much caffeine?", types: ["S"] },
+            { text: "Yay! Magic is real! What am I gonna isekai into?", types: ["N"] },
         ]
     },
     {
