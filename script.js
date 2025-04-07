@@ -93,13 +93,33 @@ function goToNextQuestion() {
     }
 }
 
+const mbtiToCharacter = {
+    "INTJ": { name: "Dragon", image: "Dragon.png" },
+    "INTP": { name: "Owl", image: "Owl.png" },
+    "ENTJ": { name: "Eagle", image: "Eagle.png" },
+    "ENTP": { name: "Fox", image: "Fox.png" },
+    "INFJ": { name: "Blue Whale", image: "BlueWhale.png" },
+    "INFP": { name: "Otter", image: "Otter.png" },
+    "ENFJ": { name: "Dog", image: "Dog.png" },
+    "ENFP": { name: "Ferret", image: "Ferret.png" },
+    "ISTJ": { name: "Beaver", image: "Beaver.png" },
+    "ISFJ": { name: "Goose", image: "Goose.png" },
+    "ESTJ": { name: "Wolf", image: "Wolf.png" },
+    "ESFJ": { name: "Penguin", image: "Penguin.png" },
+    "ISTP": { name: "Snake", image: "Snake.png" },
+    "ISFP": { name: "Cat", image: "Cat.png" },
+    "ESTP": { name: "Tiger", image: "Tiger.png" },
+    "ESFP": { name: "Parrot", image: "Parrot.png" },
+};
+
+
 function finishQuiz() {
-    // Determine MBTI by highest score in each dichotomy
     const result =
         (scores["E"] >= scores["I"] ? "E" : "I") +
         (scores["S"] >= scores["N"] ? "S" : "N") +
         (scores["T"] >= scores["F"] ? "T" : "F") +
         (scores["J"] >= scores["P"] ? "J" : "P");
 
-    window.location.href = `results.html?type=${result}`;
+    const character = mbtiToCharacter[result];
+    window.location.href = `results.html?type=${character.name}`;
 }

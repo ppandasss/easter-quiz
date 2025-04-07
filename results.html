@@ -28,16 +28,17 @@
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const type = params.get("type");
+        const characterName = params.get("type");
 
-        // Robustness check for missing type
-        if (!type) {
+        // Check if a valid character name is provided
+        if (!characterName) {
             document.getElementById("result-container").innerHTML = "<p>No result found. <a href='index.html'>Take the quiz</a> first!</p>";
-            throw new Error("No result type provided."); // Optional: stop further script execution
+            throw new Error("No character name provided.");
         }
 
         document.getElementById("result-type").textContent = type;
-        document.getElementById("result-image").src = `images/${type}.png`;
+        document.getElementById("result-image").src = `images/${characterName.replace(/\s+/g, '')}.png`;
+
 
         function retry() {
             window.location.href = 'index.html';

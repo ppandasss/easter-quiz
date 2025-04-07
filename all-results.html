@@ -16,22 +16,44 @@
     </div>
 
     <script>
-    const types = [
-      "INTJ", "INTP", "ENTJ", "ENTP",
-      "INFJ", "INFP", "ENFJ", "ENFP",
-      "ISTJ", "ISFJ", "ESTJ", "ESFJ",
-      "ISTP", "ISFP", "ESTP", "ESFP"
-    ];
+        const mbtiToCharacter = {
+            "INTJ": { name: "Dragon", image: "Dragon.png" },
+            "INTP": { name: "Owl", image: "Owl.png" },
+            "ENTJ": { name: "Eagle", image: "Eagle.png" },
+            "ENTP": { name: "Fox", image: "Fox.png" },
+            "INFJ": { name: "Blue Whale", image: "BlueWhale.png" },
+            "INFP": { name: "Otter", image: "Otter.png" },
+            "ENFJ": { name: "Dog", image: "Dog.png" },
+            "ENFP": { name: "Ferret", image: "Ferret.png" },
+            "ISTJ": { name: "Beaver", image: "Beaver.png" },
+            "ISFJ": { name: "Goose", image: "Goose.png" },
+            "ESTJ": { name: "Wolf", image: "Wolf.png" },
+            "ESFJ": { name: "Penguin", image: "Penguin.png" },
+            "ISTP": { name: "Snake", image: "Snake.png" },
+            "ISFP": { name: "Cat", image: "Cat.png" },
+            "ESTP": { name: "Tiger", image: "Tiger.png" },
+            "ESFP": { name: "Parrot", image: "Parrot.png" }
+        };
 
-    const container = document.getElementById('all-results-container');
-    types.forEach(type => {
-      const img = document.createElement('img');
-      img.src = `images/${type}.png`;
-      img.alt = type;
-      img.style.maxWidth = '300px';
-      img.style.margin = '20px';
-      container.appendChild(img);
-    });
+        const container = document.getElementById('all-results-container');
+        Object.values(mbtiToCharacter).forEach(character => {
+            const img = document.createElement('img');
+            img.src = `images/${character.image}`;
+            img.alt = character.name;
+            img.style.maxWidth = '300px';
+            img.style.margin = '20px';
+
+            const caption = document.createElement('p');
+            caption.textContent = character.name;
+
+            const wrapper = document.createElement('div');
+            wrapper.style.display = 'inline-block';
+            wrapper.style.textAlign = 'center';
+            wrapper.appendChild(img);
+            wrapper.appendChild(caption);
+
+            container.appendChild(wrapper);
+        });
     </script>
 </body>
 </html>
