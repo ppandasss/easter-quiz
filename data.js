@@ -111,5 +111,6 @@ const questions = [
         image: "images/question-placeholder.png",
         answers: [
             { text: "...", types: [] },
+        ]
     },
 ];
