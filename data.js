@@ -98,7 +98,7 @@ const questions = [
     },
     {
         // F
-        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you've learned from...",
+        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you learned from...",
         image: "images/question-placeholder.png",
         answers: [
             { text: "Observing other bunnies' clever moves and tricks.", types: ["S"] },
@@ -111,7 +111,7 @@ const questions = [
         image: "images/question-placeholder.png",
         answers: [
             { text: "Better have some tools ready\u2014or at least a plan. Always be prepared!", types: ["J"] },
-            { text: "We don’t have any clue yet. Let's just figure something out if anything happens.", types: ["P"] },
+            { text: "We don't have any clue yet. Let's just figure something out if anything happens.", types: ["P"] },
         ]
     },
     {
@@ -123,20 +123,27 @@ const questions = [
     },
     {
         // G
-        text: "Time is almost up, and your basket is nearly overflowing with eggs.\n\nYou spot one more nearby and reach for it\n\n\u2014but a baby bunny arrives just a second after you.Their basket only has one lonely egg.",
+        text: "Time is almost up, and your basket is nearly overflowing with eggs.\n\nYou spot one more nearby and reach for it\u2014but a baby bunny arrives just a second after you.\n\nTheir basket only has one lonely egg.",
         image: "images/question-placeholder.png",
         answers: [
             { text: "Sorry, kid. Rules are rules.", types: ["T"] },
-            { text: "Aw, only one? Then this one is yours!", types: ["F"] },
+            { text: "Aw, only one? Then this one's yours!", types: ["F"] },
         ]
     },
-
     {
-        text: "You base conclusions on:",
+        text: "tbc",
         image: "images/question-placeholder.png",
         answers: [
-            { text: "Objective truth", types: ["T"] },
-            { text: "Personal impact", types: ["F"] },
+            { text: "...", types: [] },
+        ]
+    },
+    {
+        // K
+        text: "You wake up at your desk. The unfinished assignments are still there.\n\nYou reflect on everything that happened...",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "I don’t know what that was, but what a wild adventure! I'm telling someone about this.", types: ["F"] },
+            { text: "It was just a strange dream. I must've been overthinking about the Easter event.", types: ["T"] },
         ]
     },
     {
