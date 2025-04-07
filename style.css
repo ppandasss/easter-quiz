@@ -1,4 +1,4 @@
-/* Default styles (for desktop) */
+/* Base styles for desktop */
 body {
     font-family: 'Balsamiq Sans', sans-serif;
     background: #ECF87F;
@@ -8,10 +8,34 @@ body {
     font-size: 20px;
 }
 
+a {
+    color: #887BB0; /* Link color */
+    text-decoration: none; /* Removes underline */
+    font-weight: 700; /* Makes the link bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    /* Hover Effect */
+    a:hover {
+        color: #E4A58F; /* Change link color when hovered */
+        text-decoration: underline; /* Add underline on hover */
+    }
+
+    /* Active Link Style (when clicked) */
+    a:active {
+        color: #E4A58F; /* Color when the link is clicked */
+    }
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Grandstander', cursive;
     font-weight: 700;
     font-size: 40px;
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 button {
@@ -33,46 +57,6 @@ button {
         background-color: #887BB0;
         color: ghostwhite;
     }
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px; /* Smaller font size for mobile */
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 30px; /* Reduce heading font size on mobile */
-    }
-
-    button {
-        font-size: 16px; /* Smaller button font size */
-        padding: 12px; /* Smaller padding for buttons */
-        width: 150px; /* Adjust width for buttons */
-    }
-
-    #quiz-container {
-        max-width: 90%; /* Make the quiz container smaller */
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 480px) {
-    h1, h2 {
-        font-size: 24px; /* Further reduce heading font size on very small screens */
-    }
-
-    button {
-        font-size: 14px; /* Even smaller button font size */
-        padding: 10px; /* Smaller padding for buttons */
-        width: 130px; /* Even smaller button width */
-    }
-
-    #quiz-container {
-        max-width: 100%; /* Ensure the container takes full width on very small screens */
-        padding: 10px;
-    }
-}
-
 
 #progress-bar-container {
     width: 100%;
@@ -119,14 +103,56 @@ button {
         color: ghostwhite;
     }
 
-.font-size-24 {
-    font-size: 24px;
+/* Reduce font-size for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust base font size for phone */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 30px; /* Smaller heading sizes on mobile */
+    }
+
+    button {
+        font-size: 16px; /* Smaller font size for buttons */
+        padding: 12px; /* Adjust button padding */
+        width: 150px; /* Smaller width for buttons */
+    }
+
+    #question-text {
+        font-size: 16px; /* Adjust question text size */
+    }
+
+    #progress-bar-container {
+        height: 12px; /* Smaller progress bar */
+    }
+
+    #progress-bar {
+        height: 100%;
+    }
 }
 
-.font-size-14 {
-    font-size: 14px;
-}
+/* Further adjustments for even smaller screens (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Smaller base font size for very small screens */
+    }
 
-.hidden {
-    display: none;
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24px; /* Even smaller heading sizes */
+    }
+
+    button {
+        font-size: 14px; /* Further reduce button font size */
+        padding: 10px; /* Smaller button padding */
+        width: 120px; /* Even smaller button width */
+    }
+
+    #question-text {
+        font-size: 14px; /* Adjust question text size for small screens */
+    }
+
+    #progress-bar-container {
+        height: 10px; /* Smaller progress bar */
+    }
 }
