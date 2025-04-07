@@ -1,3 +1,4 @@
+/* Default styles (for desktop) */
 body {
     font-family: 'Balsamiq Sans', sans-serif;
     background: #ECF87F;
@@ -7,34 +8,10 @@ body {
     font-size: 20px;
 }
 
-a {
-    color: #887BB0; /* Link color */
-    text-decoration: none; /* Removes underline */
-    font-weight: 700; /* Makes the link bold */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-    /* Hover Effect */
-    a:hover {
-        color: #E4A58F; /* Change link color when hovered */
-        text-decoration: underline; /* Add underline on hover */
-    }
-
-    /* Active Link Style (when clicked) */
-    a:active {
-        color: #E4A58F; /* Color when the link is clicked */
-    }
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Grandstander', cursive;
     font-weight: 700;
     font-size: 40px;
-}
-
-#quiz-container {
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 button {
@@ -56,6 +33,46 @@ button {
         background-color: #887BB0;
         color: ghostwhite;
     }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 30px; /* Reduce heading font size on mobile */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button font size */
+        padding: 12px; /* Smaller padding for buttons */
+        width: 150px; /* Adjust width for buttons */
+    }
+
+    #quiz-container {
+        max-width: 90%; /* Make the quiz container smaller */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 24px; /* Further reduce heading font size on very small screens */
+    }
+
+    button {
+        font-size: 14px; /* Even smaller button font size */
+        padding: 10px; /* Smaller padding for buttons */
+        width: 130px; /* Even smaller button width */
+    }
+
+    #quiz-container {
+        max-width: 100%; /* Ensure the container takes full width on very small screens */
+        padding: 10px;
+    }
+}
+
 
 #progress-bar-container {
     width: 100%;
