@@ -31,6 +31,8 @@ function updateProgressBar() {
 function showQuestion() {
     const q = questions[currentQuestion];
     questionText.textContent = q.text;
+    const questionImage = document.getElementById("question-image");
+    questionImage.src = q.image || "images/placeholder.png";
     answersContainer.innerHTML = ""; // clear previous answers
 
     q.answers.forEach((answer, index) => {

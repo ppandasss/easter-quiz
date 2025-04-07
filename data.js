@@ -2,6 +2,7 @@
 const questions = [
     {
         text: "Now it's 3AM and you're still working at your computer. \n You look at the pile of soon-due assignments that is...",
+        image: "images/question-placeholder.png",
         answers: [
             { text: "Many", types: [] },
             { text: "So many", types: [] },
