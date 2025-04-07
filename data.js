@@ -11,7 +11,7 @@ const questions = [
     },
     {
         // B
-        text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\"Oh, hi! Dark corner eyes... unsubmitted assignments... and back pain! You're perfect! Come with me!\" The bunny grabs your hand and pulls you toward the screen.",
+        text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\n\"Oh, hi! Dark corner eyes... unsubmitted assignments... and back pain! You're perfect, come with me!\" The bunny grabs your hand and pulls you toward the screen.",
         image: "images/question-placeholder.png",
         answers: [
             { text: "Did I fall asleep? Am I hallucinating from too much caffeine?", types: ["S"] },
@@ -20,7 +20,7 @@ const questions = [
     },
     {
         // J
-        text: "\"Hi, human! My name's Aster. I'm taking you to join the Easter egg hunt! Winner gets a wish from the goddess this year!\"\nWhat first comes to your mind is...",
+        text: "\"Hi, human! My name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
         image: "images/question-placeholder.png",
         answers: [
             { text: "An egg hunt? Is my body ready for that right now\u2014am I wearing any shoes?", types: ["S"] },
