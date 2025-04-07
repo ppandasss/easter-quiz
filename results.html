@@ -36,7 +36,7 @@
             throw new Error("No character name provided.");
         }
 
-        document.getElementById("result-type").textContent = type;
+        document.getElementById("result-type").textContent = characterName;
         document.getElementById("result-image").src = `images/${characterName.replace(/\s+/g, '')}.png`;
 
 
