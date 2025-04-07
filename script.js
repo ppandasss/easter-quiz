@@ -28,15 +28,15 @@ function updateProgressBar() {
     const percent = (currentQuestion / questions.length) * 100;
     progressBar.style.width = `${percent}%`;
 }
-
 function showQuestion() {
     const q = questions[currentQuestion];
+    // Replace {relaxMethod} or any other placeholders with stored responses
     let renderedText = q.text.replace(/{(.*?)}/g, (_, key) => userResponses[key] || "");
-    questionText.textContent = renderedText;
-    questionText.textContent = q.text;
+    questionText.textContent = renderedText; // Set the updated text with the user's response
+
     const questionImage = document.getElementById("question-image");
     questionImage.src = q.image || "images/placeholder.png";
-    answersContainer.innerHTML = ""; // clear previous answers
+    answersContainer.innerHTML = ""; // Clear previous answers
 
     if (q.type === "shortAnswer") {
         // Create input box
@@ -53,15 +53,15 @@ function showQuestion() {
         submit.addEventListener("click", () => {
             const userAnswer = input.value.trim();
             if (userAnswer !== "") {
-                userResponses[q.id] = userAnswer;
+                userResponses[q.id] = userAnswer; // Store the user's response
                 goToNextQuestion();
             } else {
-                alert("Answer one before continuing. It can be anything!");
+                alert("Please answer to continue. It can be anything!");
             }
         });
         answersContainer.appendChild(submit);
     } else {
-        q.answers.forEach((answer, index) => {
+        q.answers.forEach((answer) => {
             const button = document.createElement("button");
             button.classList.add("answer-button");
             button.textContent = answer.text;
@@ -72,6 +72,7 @@ function showQuestion() {
 
     updateProgressBar();
 }
+
 
 function selectAnswer(types) {
     if (types && Array.isArray(types)) {
