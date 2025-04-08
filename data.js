@@ -123,7 +123,7 @@ const questions = [
     },
     {
         // G
-        text: "Time is almost up, and your basket is nearly overflowing with eggs.\n\nYou spot one more nearby and reach for it\u2014but a baby bunny arrives just a second after you.\n\nTheir basket only has one lonely egg.",
+        text: "Time is almost up, and your basket is nearly overflowing with eggs.\n\nYou spot one more nearby and reach for it\u2014but a baby bunny arrives just a second after you. Their basket only has one lonely egg.\n\nWhat do you do?",
         image: "images/question-placeholder.png",
         answers: [
             { text: "Sorry, kid. Rules are rules.", types: ["T"] },
@@ -131,19 +131,24 @@ const questions = [
         ]
     },
     {
-        text: "tbc",
+        text: "\"Beep beep\u2014The time is up!\" The announcement rings.\n\nEveryone returns to the venue with their baskets. Yours has more eggs than most, maybe even enough to win.\n\nThe results come out shortly, and the winner is...",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Is...", types: [] },
+        ]
+    },
+    {
+        text: "Another human, just like you, wins the race solo without any teammates at all.\n\nThe goddess appears to grant their prize. You can't help but notice the crowd celebrating their victory. \"Even in my dream, I still didn't succeed...\"",
         image: "images/question-placeholder.png",
         answers: [
             { text: "...", types: [] },
         ]
     },
     {
-        // K
-        text: "You wake up at your desk. The unfinished assignments are still there.\n\nYou reflect on everything that happened...",
+        text: "Suddenly, the goddess approaches you.\n\n\"Hi there, human. I see where you've come from...\n\nit has been tough, hasn't it? Going through all that.\"",
         image: "images/question-placeholder.png",
         answers: [
-            { text: "I don’t know what that was, but what a wild adventure! I'm telling someone about this.", types: ["F"] },
-            { text: "It was just a strange dream. I must've been overthinking about the Easter event.", types: ["T"] },
+            { text: "...", types: [] },
         ]
     },
     {
@@ -152,6 +157,51 @@ const questions = [
         image: "images/question-placeholder.png",
         answers: [
             { text: "...", types: [] },
+        ]
+    },
+    {
+        text: "\"Here. I want you to have something.\"\n\n\"When you're feeling down, look inside. It'll remind you how special you are.\"",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Receive a mysterious Easter egg", types: [] },
+        ]
+    },
+    {
+        text: "Aster runs up. \"Hey, don't feel bad\u2014we did amazing!\"\n\nAnother bunny joins. \"Your time will come! Maybe next year, or the one after.\"\n\n\"A lot of possibilities are waiting for you!\"\n\nSoon, a whole group surrounds you, cheering you on.",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "...", types: [] },
+        ]
+    },
+    {
+        text: "\"Remember what I said when you get back, alright?\"\n\n\"Things don't always happen right away. But if you keep going, it'll be yours someday!\"",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Sure, I will!", types: [] },
+            { text: "Not so sure... but I'll try!", types: [] },
+        ]
+    },
+    {
+        text: "\"And actually... I brought you here just so you could rest a bit.\"\n\"There's no wish prize to share, hehe.\"\n\n\"Oh no, time's running out! Goodbye, human! Take car\u2014”",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "You're pulled back through the magical portal once again", types: [] },
+        ]
+    },
+    {
+        // K
+        text: "Back to reality, you wake up at your desk, unfinished assignments are still there.\n\nYou reflect on everything that just happened...",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "I don't know what that was, but what a wild adventure! I'm telling someone about this.", types: ["F"] },
+            { text: "It was just a strange dream. I must've been overthinking about the Easter event.", types: ["T"] },
+        ]
+    },
+    {
+        text: "You notice something odd on your desk... an Easter egg\u2014just like the one the goddess gave you.\n\n\"No way... it was real ?\"",
+        image: "images/question-placeholder.png",
+        answers: [
+            { text: "Open and see what's inside", types: [] },
         ]
     },
 ];
