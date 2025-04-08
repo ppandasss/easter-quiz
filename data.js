@@ -182,7 +182,7 @@ const questions = [
         ]
     },
     {
-        text: "\"And actually... I brought you here just so you could rest a bit.\"\n\"There's no wish prize to share, hehe.\"\n\n\"Oh no, time's running out! Goodbye, human! Take car\u2014”",
+        text: "\"And actually... I brought you here just so you could rest a bit.\"\n\"There's no wish prize to share, hehe.\"\n\n\"Oh no, time's running out! Goodbye, human! Take car\u2014\"",
         image: "images/question-placeholder.png",
         answers: [
             { text: "You're pulled back through the magical portal once again", types: [] },
