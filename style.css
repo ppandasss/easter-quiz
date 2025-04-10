@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+#all-results-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #question-image {
     width: 475px;
     height: auto;
@@ -147,7 +152,7 @@ button {
 /* Reduce font-size for smaller screens */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Adjust base font size for phone */
+        font-size: 16px;
     }
 
     .footer {
@@ -155,18 +160,25 @@ button {
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: 32px; /* Smaller heading sizes on mobile */
+        font-size: 32px;
     }
 
     button {
-        font-size: 16px; /* Smaller font size for buttons */
-        padding: 15px; /* Adjust button padding */
-        width: 170px; /* Smaller width for buttons */
+        font-size: 16px;
+        padding: 15px;
+        width: auto;
     }
 
     #quiz-container {
         max-width: 90%;
-        margin: 0 auto;
+    }
+
+    #result-container {
+        max-width: 90%;
+    }
+
+    #all-results-container {
+        max-width: 90%;
     }
 
     #question-image {
@@ -216,17 +228,19 @@ button {
     button {
         font-size: 15px;
         padding: 12px;
-        width: 150px;
+        width: auto;
     }
 
     #quiz-container {
         max-width: 90%;
-        margin: 0 auto;
     }
 
     #result-container {
         max-width: 90%;
-        margin: 0 auto;
+    }
+
+    #all-results-container {
+        max-width: 90%;
     }
 
     #question-image {
