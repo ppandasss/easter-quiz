@@ -14,7 +14,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 a {
@@ -145,6 +145,10 @@ button {
         font-size: 16px; /* Adjust base font size for phone */
     }
 
+    .footer {
+        font-size: 12px;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-size: 32px; /* Smaller heading sizes on mobile */
     }
@@ -194,6 +198,10 @@ button {
 @media (max-width: 480px) {
     body {
         font-size: 15px; /* Smaller base font size for very small screens */
+    }
+
+    .footer {
+        font-size: 11px;
     }
 
     h1, h2, h3, h4, h5, h6 {
