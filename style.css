@@ -55,6 +55,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+#result-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #question-image {
     width: 475px;
     height: auto;
@@ -197,7 +202,7 @@ button {
 /* Further adjustments for even smaller screens (mobile phones) */
 @media (max-width: 480px) {
     body {
-        font-size: 15px; /* Smaller base font size for very small screens */
+        font-size: 15px;
     }
 
     .footer {
@@ -205,16 +210,21 @@ button {
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: 28px; /* Even smaller heading sizes */
+        font-size: 28px;
     }
 
     button {
-        font-size: 15px; /* Further reduce button font size */
-        padding: 12px; /* Smaller button padding */
-        width: 150px; /* Even smaller button width */
+        font-size: 15px;
+        padding: 12px;
+        width: 150px;
     }
 
     #quiz-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #result-container {
         max-width: 90%;
         margin: 0 auto;
     }
@@ -237,10 +247,10 @@ button {
     }
 
     #question-text {
-        font-size: 15px; /* Adjust question text size for small screens */
+        font-size: 15px;
     }
 
     #progress-bar-container {
-        height: 12px; /* Smaller progress bar */
+        height: 12px;
     }
 }
