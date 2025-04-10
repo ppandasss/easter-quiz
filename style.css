@@ -15,7 +15,6 @@ body {
     margin: 0;
     padding: 5px;
     font-size: 14px;
-    color: #887BB0;
 }
 
 a {
@@ -59,13 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 #result-container {
     max-width: 600px;
     margin: 0 auto;
-}
-
-#all-results-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
-    justify-content: center;
 }
 
 #question-image {
@@ -169,7 +161,7 @@ button {
     button {
         font-size: 16px;
         padding: 15px;
-        width: auto;
+        width: 150px;
     }
 
     #quiz-container {
@@ -177,10 +169,6 @@ button {
     }
 
     #result-container {
-        max-width: 90%;
-    }
-
-    #all-results-container {
         max-width: 90%;
     }
 
@@ -231,7 +219,7 @@ button {
     button {
         font-size: 15px;
         padding: 12px;
-        width: auto;
+        width: 150px;
     }
 
     #quiz-container {
@@ -239,10 +227,6 @@ button {
     }
 
     #result-container {
-        max-width: 90%;
-    }
-
-    #all-results-container {
         max-width: 90%;
     }
 
