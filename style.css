@@ -173,7 +173,7 @@ button {
 
     #question-image {
         width: 100%;
-        height: fit-content;
+        height: auto;
         margin-bottom: 20px;
     }
 
@@ -231,7 +231,7 @@ button {
 
     #question-image {
         width: 100%;
-        height: fit-content;
+        height: auto;
         margin-bottom: 20px;
     }
 
