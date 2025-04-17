@@ -20,7 +20,7 @@ const questions = [
     },
     {
         // J
-        text: "\"Hi, human. My name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
+        text: "\"Hi, human. My name's Aster. I'm taking you to join the Easter egg hunt.\"\n\nWhat first comes to your mind is...",
         image: "images/Questions/03.png",
         answers: [
             { text: "An egg hunt? Is my body ready for that right now\u2014am I wearing any shoes?", types: ["S"] },
@@ -31,12 +31,12 @@ const questions = [
         // Short Answer
         type: "shortAnswer",
         id: "relaxMethod",
-        text: "You realize you have unfinished assignments, unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving. I know you've been tired lately. All work and no rest isn't good for you. Treat this as a break!\n\nTell me\u2014what do you do when it all feels like too much?\"",
+        text: "You realize you have unfinished assignments, unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\nYou must be tired, all work and no rest isn't good for you. Treat this as a break!\n\nTell me\u2014what do you do when it all feels like too much?\"",
         image: "images/Questions/04.png",
         answers: null
     },
     {
-        text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nI want you on my team because...you've got something special that'll help me win!\nAre you in? If we win, I'll share the wish with you.\"",
+        text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nThe winner gets a wish from the goddess this year.\n\nAre you in? If we win, I'll share the wish with you.\"",
         image: "images/Questions/05.png",
         answers: [
             { text: "Alright, I'm in!", types: [] },
@@ -44,7 +44,7 @@ const questions = [
     },
     {
         // D
-        text: "You and Aster arrive in a magical forest. Bunnies are running in all directions.\n\n\"The hunt has already started\u2014we're late! Follow me!\"",
+        text: "You and Aster arrive in a magical forest. Bunnies are running in all directions.\n\n\"The hunt has already started. We're late! Follow me!\"",
         image: "images/Questions/06.png",
         answers: [
             { text: "Wait! Shouldn't we plan our moves first?", types: ["J"] },
@@ -71,7 +71,7 @@ const questions = [
     },
     {
         // C
-        text: "The plan works! After successfully gathering the eggs, you continue and reach a fork in the road.\n\nYou think...",
+        text: "The plan works! After collecting the eggs, you continue and reach a fork in the road.\n\nYou think...",
         image: "images/Questions/09.png",
         answers: [
             { text: "The short route might not have as many eggs, but it's faster to explore all.", types: ["T"] },
