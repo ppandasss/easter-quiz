@@ -20,7 +20,7 @@ body {
 a {
     color: #887BB0; /* Link color */
     text-decoration: none; /* Removes underline */
-    font-weight: 700; /* Makes the link bold */
+    font-weight: 700;
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #question-image {
-    width: 475px;
+    width: 400px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -133,7 +133,7 @@ button {
 
 .short-answer-input {
     width: 100%;
-    padding: 15px;
+    padding: 4px 4px 4px 4px;
     margin-bottom: 15px;
     font-family: 'Balsamiq Sans', sans-serif;
     font-weight: 400;
