@@ -142,6 +142,12 @@ button {
     border-radius: 8px;
 }
 
+.result-image {
+    max-width: 500px;
+    height: auto;
+    margin: 1rem 0;
+}
+
 
 /* Reduce font-size for smaller screens */
 @media (max-width: 768px) {
@@ -199,6 +205,10 @@ button {
     #progress-bar {
         height: 100%;
     }
+
+    .result-image {
+        max-width: 90%;
+    }
 }
 
 /* Further adjustments for even smaller screens (mobile phones) */
@@ -252,5 +262,9 @@ button {
 
     #progress-bar-container {
         height: 12px;
+    }
+
+    .result-image {
+        max-width: 90%;
     }
 }
