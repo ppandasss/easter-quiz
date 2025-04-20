@@ -143,7 +143,7 @@ button {
 }
 
 .result-image {
-    max-width: 500px;
+    width: 500px;
     height: auto;
     margin: 1rem 0;
 }
@@ -207,7 +207,7 @@ button {
     }
 
     .result-image {
-        max-width: 90%;
+        width: 90%;
     }
 }
 
@@ -265,6 +265,6 @@ button {
     }
 
     .result-image {
-        max-width: 90%;
+        width: 90%;
     }
 }
