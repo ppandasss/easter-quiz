@@ -20,7 +20,7 @@ const questions = [
     },
     {
         // J
-        text: "\"Hi, human. My name's Aster. I'm taking you to join the Easter egg hunt.\"\n\nWhat first comes to your mind is...",
+        text: "\"Hi, my name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
         image: "images/Questions/03.png",
         answers: [
             { text: "An egg hunt? Is my body ready for that right now\u2014am I wearing any shoes?", types: ["S"] },
@@ -36,7 +36,7 @@ const questions = [
         answers: null
     },
     {
-        text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nThe winner gets a wish from the goddess this year.\n\nAre you in? If we win, I'll share the wish with you.\"",
+        text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nAre you in? If we win, I'll share the wish with you.\"",
         image: "images/Questions/05.png",
         answers: [
             { text: "Alright, I'm in!", types: [] },
