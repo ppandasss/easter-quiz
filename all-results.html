@@ -43,69 +43,6 @@
             const img = document.createElement('img');
             img.src = `images/Results/${character.image}`;
             img.alt = character.name;
-            img.style.maxWidth = '500px';
-            img.style.margin = '10px';
-
-            const wrapper = document.createElement('div');
-            wrapper.style.margin = '30px auto';
-            wrapper.style.textAlign = 'center';
-            wrapper.appendChild(img);
-
-            container.appendChild(wrapper);
-        });
-
-        function toHome() {
-            window.location.href = 'index.html';
-        }
-    </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easter Egg Collection</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div id="result-container">
-        <h1 style="margin-top: 3rem;">Easter Egg Collection</h1>
-        <div id="all-results-container"></div>
-        <button style="margin-bottom: 3rem;" onclick="toHome()">Back to Egg Hunt</button>
-        <!--p class="footer" style="margin-top: 2rem;">Created by PANDA and piti_999</p-->
-    </div>
-
-    <script>
-        const mbtiToCharacter = {
-            "INTJ": { name: "Dragon", image: "Dragon.png" },
-            "INTP": { name: "Owl", image: "Owl.png" },
-            "ENTJ": { name: "Eagle", image: "Eagle.png" },
-            "ENTP": { name: "Fox", image: "Fox.png" },
-            "INFJ": { name: "Blue Whale", image: "BlueWhale.png" },
-            "INFP": { name: "Otter", image: "Otter.png" },
-            "ENFJ": { name: "Dog", image: "Dog.png" },
-            "ENFP": { name: "Ferret", image: "Ferret.png" },
-            "ISTJ": { name: "Beaver", image: "Beaver.png" },
-            "ISFJ": { name: "Goose", image: "Goose.png" },
-            "ESTJ": { name: "Wolf", image: "Wolf.png" },
-            "ESFJ": { name: "Penguin", image: "Penguin.png" },
-            "ISTP": { name: "Snake", image: "Snake.png" },
-            "ISFP": { name: "Cat", image: "Cat.png" },
-            "ESTP": { name: "Tiger", image: "Tiger.png" },
-            "ESFP": { name: "Parrot", image: "Parrot.png" }
-        };
-
-        const container = document.getElementById('all-results-container');
-        Object.values(mbtiToCharacter).forEach(character => {
-            const img = document.createElement('img');
-            img.src = `images/Results/${character.image}`;
-            img.alt = character.name;
             img.className = 'result-image';
 
             const wrapper = document.createElement('div');
