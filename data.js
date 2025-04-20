@@ -1,7 +1,7 @@
 
 const questions = [
     {
-        text: "Now it's 3AM and you're still working at your computer. \n You look at the pile of soon-due assignments that is...",
+        text: "It's 3AM and you're still working. \n You look at the pile of soon-due assignments that is...",
         image: "images/Questions/01.png",
         answers: [
             { text: "Many", types: [] },
@@ -11,7 +11,7 @@ const questions = [
     },
     {
         // B
-        text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\n\"Dark corner eyes... loaded assignments... and back pain! You're perfect, come with me!\" The bunny grabs your hand and pulls you toward the screen.",
+        text: "Suddenly\u2014a bunny hops out from your screen!\n\n\"Dark corner eyes... loaded assignments... and back pain! You're perfect, come with me!\"\n\n The bunny pulls you toward the screen.",
         image: "images/Questions/02.png",
         answers: [
             { text: "Did I fall asleep? Am I hallucinating from too much caffeine?", types: ["S"] },
@@ -20,18 +20,18 @@ const questions = [
     },
     {
         // J
-        text: "\"Hi, my name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
+        text: "\"Hi, my name's Aster. I'm taking you to join the Easter egg hunt. If you win, you'll get a wish from the goddess of Easter!\"\n\nWhat first comes to your mind is...",
         image: "images/Questions/03.png",
         answers: [
             { text: "An egg hunt? Is my body ready for that\u2014am I wearing any shoes?", types: ["S"] },
-            { text: "Any wish? What should I ask for? I wonder who that goddess is.", types: ["N"] },
+            { text: "Any wish? What should I ask for\u2014who is the goddess?", types: ["N"] },
         ]
     },
     {
         // Short Answer
         type: "shortAnswer",
         id: "relaxMethod",
-        text: "You realize you have unfinished assignments, unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about yourself!\nYou must be tired, all work and no rest isn't good for you. Treat this as a break!\n\nTell me\u2014what do you do when it all feels like too much?\"",
+        text: "You look at unfinished assignments, unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about yourself!\nAll work and no rest isn't good for you. Treat this as a break!\n\nTell me\u2014what do you do to relax from work and study?\"",
         image: "images/Questions/04.png",
         answers: null
     },
@@ -62,7 +62,7 @@ const questions = [
     },
     {
         // H
-        text: "In the next area, you find a hen's nest full of Easter eggs. Aster tells you to stand by while they distract the hen.\n\nYou nod and think...",
+        text: "In the next area, you find a hen's nest full of Easter eggs. Aster tells you to stand by while they distract the hen.\n\nYou think...",
         image: "images/Questions/08.png",
         answers: [
             { text: "We've got a plan! We're definitely getting those eggs.", types: ["J"] },
@@ -71,25 +71,25 @@ const questions = [
     },
     {
         // C
-        text: "The plan works! After collecting the eggs, you continue and reach a fork in the road.\n\nYou think...",
+        text: "After collecting the eggs, you continue and reach a fork in the road.\n\nYou think...",
         image: "images/Questions/09.png",
         answers: [
-            { text: "The short route might not have as many eggs, but it's faster to explore all.", types: ["T"] },
-            { text: "Something about the long path feels right... I trust my gut\u2014let's go that way.", types: ["F"] },
+            { text: "The short route should be faster to explore all\u2014let's go that way.", types: ["T"] },
+            { text: "Something about the long path feels better... I trust my gut\u2014let's go that way.", types: ["F"] },
         ]
     },
     {
         // I
-        text: "\"Beep beep\u2014It's halftime! Please gather at the center area.\" The announcement rings all over the forest.\n\nAster says, \"I'm gonna chat with the other bunnies. Come join me if you want!\"\n\nYou decide to recharge by...",
+        text: "\"Beep beep\u2014It's halftime! Please gather at the center area.\" The announcement rings all over the forest.\n\n\"I'm gonna chat with the other bunnies. Come join me if you want!\"\n\nYou decide to recharge by...",
         image: "images/Questions/10.png",
         answers: [
-            { text: "Sitting alone and enjoying the peaceful view.", types: ["I"] },
-            { text: "Joining Aster\u2014I want to meet the other bunnies!", types: ["E"] },
+            { text: "Sitting alone and enjoy the peaceful view.", types: ["I"] },
+            { text: "Joining Aster1 to meet the other bunnies", types: ["E"] },
         ]
     },
     {
         // E
-        text: "After a while, a bunny hops over and starts telling you all about their journey to the hunt every year, going on in colorful detail.\n\nYou decide to...",
+        text: "After a while, a bunny hops over and starts telling you about their journey to the hunt every year in colorful detail.\n\nYou decide to...",
         image: "images/Questions/11.png",
         answers: [
             { text: "Share how strange you ended up here too!", types: ["E"] },
@@ -98,20 +98,20 @@ const questions = [
     },
     {
         // F
-        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you...",
+        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you've learned from...",
         image: "images/Questions/12.png",
         answers: [
-            { text: "Observe other bunnies' clever moves and tricks.", types: ["S"] },
-            { text: "Study the environment and adapt your own strategy.", types: ["N"] },
+            { text: "Observing other bunnies' clever moves and tricks.", types: ["S"] },
+            { text: "Studying the environment and adapt your own strategy.", types: ["N"] },
         ]
     },
     {
         // L
-        text: "You spot an egg sitting out in an open area\u2014it looks a little too easy.\n\nIt might be a trap?",
+        text: "You spot an egg sitting out in an open area. It looks a little too easy\u2014might be a trap?",
         image: "images/Questions/13.png",
         answers: [
-            { text: "Better have some tools ready\u2014or at least a plan. Always be prepared!", types: ["J"] },
-            { text: "We don't have any clue yet. Just figure something out if anything happens.", types: ["P"] },
+            { text: "We should have some tools ready\u2014or at least a plan. Better be prepared!", types: ["J"] },
+            { text: "We don't have any clue yet. I'll figure something out if anything happens.", types: ["P"] },
         ]
     },
     {
@@ -123,7 +123,7 @@ const questions = [
     },
     {
         // G
-        text: "Time is almost up, and your basket is nearly overflowing with eggs.\n\nYou spot one more nearby and reach for it\u2014but a baby bunny arrives just a second after you. Their basket only has one lonely egg.\n\nWhat do you do?",
+        text: "Time is almost up, and your basket is overflowing with eggs.\n\nYou spot one more nearby\u2014but a baby bunny arrives just a second after you. Their basket only has one lonely egg.",
         image: "images/Questions/15.png",
         answers: [
             { text: "Sorry, kid. Rules are rules.", types: ["T"] },
@@ -131,14 +131,14 @@ const questions = [
         ]
     },
     {
-        text: "\"Beep beep\u2014The time is up!\" The announcement rings.\n\nEveryone returns to the venue with their baskets. Yours has more eggs than most, maybe even enough to win.\n\nThe results come out shortly, and the winner is...",
+        text: "\"Beep beep\u2014The time is up!\" The announcement rings.\n\nEveryone returns with their baskets. Yours has more eggs than most, maybe even enough to win.\n\nThe results come out shortly, and the winner is...",
         image: "images/Questions/16.png",
         answers: [
             { text: "Is...", types: [] },
         ]
     },
     {
-        text: "Another human, just like you, wins the race solo without any teammates at all.\n\nThe goddess appears to grant their prize. You can't help but notice the crowd celebrating their victory. \"Even in my dream, I still didn't succeed...\"",
+        text: "Another human, just like you, wins the race solo without any teammates at all.\n\nThe goddess appears to grant their prize. You can't help but notice the crowd celebrating their victory.\n\n\'Even in my dream, I still don't succeed...\'",
         image: "images/Questions/17.png",
         answers: [
             { text: "...", types: [] },
@@ -174,15 +174,15 @@ const questions = [
         ]
     },
     {
-        text: "\"Remember what I said when you get back, alright?\"\n\n\"Things don't always happen right away. But if you keep going, it'll be yours someday!\"",
+        text: "\"Remember this when you get back, alright?\n\nNot everything happens right away. But if you keep going, it'll be yours someday!\"",
         image: "images/Questions/22.png",
         answers: [
             { text: "Sure, I will!", types: [] },
-            { text: "Not so sure... but I'll try!", types: [] },
+            { text: "Not so sure... but I'll try.", types: [] },
         ]
     },
     {
-        text: "\"And actually... I brought you here just so you could rest a bit.\"\n\"There's no wish prize to share, hehe.\"\n\n\"Oh no, time's running out! Goodbye, human! Take car\u2014\"",
+        text: "\"And actually... I brought you here just so you could rest a bit. There's no wish prize to share, hehe.\"\n\n\"Oh no, time's running out! Goodbye, human! Take car\u2014\"",
         image: "images/Questions/23.png",
         answers: [
             { text: "You're pulled back through the magical portal once again", types: [] },
@@ -190,15 +190,15 @@ const questions = [
     },
     {
         // K
-        text: "Back to reality, you wake up at your desk, unfinished assignments are still there.\n\nYou reflect on everything that just happened...",
+        text: "You wake up at your desk, unfinished assignments are still there.\n\nYou reflect on everything that just happened...",
         image: "images/Questions/24.png",
         answers: [
             { text: "What a wild adventure! I'm telling someone about this.", types: ["F"] },
-            { text: "It was just a strange dream. Proprably overthinking about Easter.", types: ["T"] },
+            { text: "It was just a strange dream. Probably overthinking about the Easter event.", types: ["T"] },
         ]
     },
     {
-        text: "You notice a coloful Easter egg on your desk.\n\n\"No way... it was real ?\"",
+        text: "You notice a glowing Easter egg on your desk.\n\n\"No way... it was real ?\"",
         image: "images/Questions/25.png",
         answers: [
             { text: "Open and see what's inside", types: [] },
