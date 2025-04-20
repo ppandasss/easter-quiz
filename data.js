@@ -84,7 +84,7 @@ const questions = [
         image: "images/Questions/10.png",
         answers: [
             { text: "Sitting alone and enjoy the peaceful view.", types: ["I"] },
-            { text: "Joining Aster1 to meet the other bunnies", types: ["E"] },
+            { text: "Joining Aster\u2014I want to meet other bunnies!", types: ["E"] },
         ]
     },
     {
