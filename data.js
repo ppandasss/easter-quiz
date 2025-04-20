@@ -193,12 +193,12 @@ const questions = [
         text: "Back to reality, you wake up at your desk, unfinished assignments are still there.\n\nYou reflect on everything that just happened...",
         image: "images/Questions/24.png",
         answers: [
-            { text: "I don't know what that was, but what a wild adventure! I'm telling someone about this.", types: ["F"] },
-            { text: "It was just a strange dream. I must've been overthinking about the Easter event.", types: ["T"] },
+            { text: "What a wild adventure! I'm telling someone about this.", types: ["F"] },
+            { text: "It was just a strange dream. Proprably overthinking about Easter.", types: ["T"] },
         ]
     },
     {
-        text: "You notice something odd on your desk... an Easter egg\u2014just like the one the goddess gave you.\n\n\"No way... it was real ?\"",
+        text: "You notice a coloful Easter egg on your desk.\n\n\"No way... it was real ?\"",
         image: "images/Questions/25.png",
         answers: [
             { text: "Open and see what's inside", types: [] },
