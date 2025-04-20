@@ -41,13 +41,13 @@
         const container = document.getElementById('all-results-container');
         Object.values(mbtiToCharacter).forEach(character => {
             const img = document.createElement('img');
-            img.src = `images/${character.image}`;
+            img.src = `images/Results/${character.image}`;
             img.alt = character.name;
             img.style.maxWidth = '300px';
             img.style.margin = '20px';
 
-            const caption = document.createElement('p');
-            caption.textContent = character.name;
+            /*const caption = document.createElement('p');
+            caption.textContent = character.name;*/
 
             const wrapper = document.createElement('div');
             wrapper.style.margin = '30px auto';
