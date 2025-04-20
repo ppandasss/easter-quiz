@@ -11,7 +11,7 @@ const questions = [
     },
     {
         // B
-        text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\n\"Oh, hi! Dark corner eyes... unsubmitted assignments... and back pain! You're perfect, come with me!\" The bunny grabs your hand and pulls you toward the screen.",
+        text: "You're getting sleepy, but suddenly\u2014a bunny hops out from your screen!\n\n\"Dark corner eyes... loaded assignments... and back pain! You're perfect, come with me!\" The bunny grabs your hand and pulls you toward the screen.",
         image: "images/Questions/02.png",
         answers: [
             { text: "Did I fall asleep? Am I hallucinating from too much caffeine?", types: ["S"] },
@@ -23,7 +23,7 @@ const questions = [
         text: "\"Hi, my name's Aster. I'm taking you to join the Easter egg hunt. The winner gets a wish from the goddess this year!\"\n\nWhat first comes to your mind is...",
         image: "images/Questions/03.png",
         answers: [
-            { text: "An egg hunt? Is my body ready for that right now\u2014am I wearing any shoes?", types: ["S"] },
+            { text: "An egg hunt? Is my body ready for that\u2014am I wearing any shoes?", types: ["S"] },
             { text: "Any wish? What should I ask for? I wonder who that goddess is.", types: ["N"] },
         ]
     },
@@ -31,12 +31,12 @@ const questions = [
         // Short Answer
         type: "shortAnswer",
         id: "relaxMethod",
-        text: "You realize you have unfinished assignments, unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about your back! You've got to get moving.\nYou must be tired, all work and no rest isn't good for you. Treat this as a break!\n\nTell me\u2014what do you do when it all feels like too much?\"",
+        text: "You realize you have unfinished assignments, unsure if you should go.\n\n\"Worried about that? Nah\u2014worry about yourself!\nYou must be tired, all work and no rest isn't good for you. Treat this as a break!\n\nTell me\u2014what do you do when it all feels like too much?\"",
         image: "images/Questions/04.png",
         answers: null
     },
     {
-        text: "\"That sounds nice! This egg hunt's a little different, but I promise it'll be fun!\n\nAre you in? If we win, I'll share the wish with you.\"",
+        text: "\"That sounds nice! This egg hunt is a little different, but I promise it'll be fun!\n\nAre you in? If we win, I'll share the wish with you.\"",
         image: "images/Questions/05.png",
         answers: [
             { text: "Alright, I'm in!", types: [] },
@@ -80,7 +80,7 @@ const questions = [
     },
     {
         // I
-        text: "\"Beep beep\u2014It's halftime! Please gather at the center area.\" The announcement rings lal over the forest.\n\nAster says, \"I'm gonna chat with the other bunnies. Come join me if you want!\"\n\nYou decide to recharge by...",
+        text: "\"Beep beep\u2014It's halftime! Please gather at the center area.\" The announcement rings all over the forest.\n\nAster says, \"I'm gonna chat with the other bunnies. Come join me if you want!\"\n\nYou decide to recharge by...",
         image: "images/Questions/10.png",
         answers: [
             { text: "Sitting alone and enjoying the peaceful view.", types: ["I"] },
@@ -98,20 +98,20 @@ const questions = [
     },
     {
         // F
-        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you learned from...",
+        text: "\"Beep beep\u2014Second half starts now!\" The announcement rings again.\n\nYou reunite with Aster, feeling more prepared as you...",
         image: "images/Questions/12.png",
         answers: [
-            { text: "Observing other bunnies' clever moves and tricks.", types: ["S"] },
-            { text: "Studying the environment and adapting your own strategy.", types: ["N"] },
+            { text: "Observe other bunnies' clever moves and tricks.", types: ["S"] },
+            { text: "Study the environment and adapt your own strategy.", types: ["N"] },
         ]
     },
     {
         // L
-        text: "You spot an egg sitting out in an open area\u2014it looks a little too easy.\n\nYou pause before going in, thinking it might be a trap.",
+        text: "You spot an egg sitting out in an open area\u2014it looks a little too easy.\n\nIt might be a trap?",
         image: "images/Questions/13.png",
         answers: [
             { text: "Better have some tools ready\u2014or at least a plan. Always be prepared!", types: ["J"] },
-            { text: "We don't have any clue yet. Let's just figure something out if anything happens.", types: ["P"] },
+            { text: "We don't have any clue yet. Just figure something out if anything happens.", types: ["P"] },
         ]
     },
     {
