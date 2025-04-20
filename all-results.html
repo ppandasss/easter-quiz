@@ -41,9 +41,9 @@
         const container = document.getElementById('all-results-container');
         Object.values(mbtiToCharacter).forEach(character => {
             const img = document.createElement('img');
+            img.className = 'result-image';
             img.src = `images/Results/${character.image}`;
             img.alt = character.name;
-            img.className = 'result-image';
 
             const wrapper = document.createElement('div');
             wrapper.style.margin = '30px auto';
